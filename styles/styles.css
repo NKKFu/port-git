@@ -1,0 +1,29 @@
+body {
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-weight: 800;
+}
+
+#header {
+    background-image: linear-gradient(to right, rgba(100, 100, 100, 0.1) 0%, rgba(0, 0, 0, 1) 33%), url('images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    width: 30vw;
+    height: 100vh;
+}
+
+#header div {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    left: calc(30vw - 75%);
+}
+
+.repo-card {
+    background-color: rgb(17, 17, 17);
+    border-radius: 5px;
+}
