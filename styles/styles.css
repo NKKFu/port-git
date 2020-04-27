@@ -8,7 +8,8 @@ body {
 }
 
 #header {
-    background-image: linear-gradient(to right, rgba(100, 100, 100, 0.1) 0%, rgba(0, 0, 0, 1) 33%), url('images/background.png');
+    position: fixed;
+    background-image: linear-gradient(to right, rgba(100, 100, 100, 0.1) 0%, rgba(0, 0, 0, 1) 33%), url('../images/background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -19,11 +20,43 @@ body {
 #header div {
     position: absolute;
     top: 30%;
-    width: 50%;
-    left: calc(30vw - 75%);
+    width: 70%;
+    left: calc(30vw - 80%);
+}
+
+#content {
+    background-color: black;
+    width: 70vw;
+    margin-left: 30vw;
 }
 
 .repo-card {
     background-color: rgb(17, 17, 17);
     border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    #header {
+        position: relative;
+        background-image: linear-gradient(to bottom, rgba(100, 100, 100, 0.1) 0%, rgba(0, 0, 0, 1) 80%), url('../images/background.png');
+        width: 100vw;
+        background-size: cover;
+        height: 70vh;
+        text-align: center;
+    }
+    #header table {
+        display: none;
+        margin: auto;
+        text-align: left;
+    }
+    #header div {
+        position: absolute;
+        top: 10%;
+        width: 100%;
+        left: 0%;
+    }
+    #content {
+        width: 100vw;
+        margin-left: 0;
+    }
 }
