@@ -10,6 +10,9 @@ const USER_BIO = document.getElementById('USER_BIO');
 const REPO_HOLDER = document.getElementById('repositories-holder');
 
 function loadUserProfile() {
+    console.log(USERNAME);
+    
+
     // Get user Profile 
     fetch(`https://api.github.com/users/${USERNAME}`)
         .catch((err) => {
