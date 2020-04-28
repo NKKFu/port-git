@@ -12,6 +12,9 @@ const REPO_HOLDER = document.getElementById('repositories-holder');
 function loadUserProfile() {
     // Get user Profile 
     fetch(`https://api.github.com/users/${USERNAME}`)
+        .catch((err) => {
+            console.error(err);
+        })
         .then(function (response) {
             if (response.ok) {
                 return response.json();
@@ -31,6 +34,9 @@ function loadUserProfile() {
 
     // Get user repositories
     fetch(`https://api.github.com/users/${USERNAME}/repos`)
+        .catch((err) => {
+            console.error(err);
+        })
         .then(function (response) {
             if (response.ok) {
                 return response.json();
