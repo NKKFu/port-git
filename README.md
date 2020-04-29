@@ -23,3 +23,6 @@ O nome do usuário ficará após o símbolo hash.
  - Github API
  
 ## **MIT License**
+
+
+Feito com 🖤 por Nelson Kenmochi
