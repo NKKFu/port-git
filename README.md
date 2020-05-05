@@ -14,7 +14,7 @@ Para utilizar o serviço, use: *url* + **#** + *Nome do usuário* . Por exemplo:
 
 O nome do usuário ficará após o símbolo hash.
 
-## Tecnologies
+## Tecnologias
 
  - HTML
  - CSS
